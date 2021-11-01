@@ -8,10 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+
     - name: Use Node.js 14.17.0
       uses: actions/setup-node@v1
       with:
         node-version: 14.17.0
+
+
+    - name: Install and Build
+      run: |
+        npm install
+        npm run build -- --prod
+
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
@@ -19,4 +27,3 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: dist/ng-github-action-pages
-        BUILD_SCRIPT: npm install && npm run build -- --prod
