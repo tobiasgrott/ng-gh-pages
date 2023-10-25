@@ -22,8 +22,7 @@ jobs:
 
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: master
-        BRANCH: gh-pages
-        FOLDER: dist/ng-github-action-pages
+      with:
+        token: ${{ secrets.ACCESS_TOKEN }}
+        branch: gh-pages
+        folder: dist/ng-github-action-pages
