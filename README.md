@@ -30,6 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```bash
 ng update
 ng update @angular/cli @angular/core
+ng update @angular-devkit/build-angular
 npm outdated
 npx npm-check-updates -u
 ```
