@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles */
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  border-radius: 4px;
+}
+
+.content {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.content h1 {
+  font-size: 1.5rem;
+  margin: 0 0 12px;
+}
+
+.content p {
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
